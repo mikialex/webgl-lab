@@ -1,5 +1,5 @@
 {
-  "name": "threejslearning",
+  "name": "webGLlab",
   "version": "1.0.0",
   "description": "a learning project  ",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "mk",
   "license": "ISC",
   "dependencies": {
-    "webpack": "^2.6.1"
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
