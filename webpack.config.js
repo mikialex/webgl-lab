@@ -10,7 +10,6 @@ var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
 module.exports = {
   entry: {
     app: path.resolve(APP_PATH, 'index.js'),
-    // mobile: path.resolve(APP_PATH, 'mobile.js'),
     // vendors: []
   },
   output: {
@@ -22,14 +21,14 @@ module.exports = {
     }
   },
   //enable dev source map
-  devtool: 'eval-source-map',
+//   devtool: 'eval-source-map',
   //enable dev server
-  devServer: {
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
-    progress: true,
-  },
+//   devServer: {
+//     historyApiFallback: true,
+//     hot: true,
+//     inline: true,
+//     progress: true,
+//   },
   module: {
     // preLoaders: [
     //   {
@@ -67,10 +66,5 @@ module.exports = {
       chunks: ['app', 'vendors'],
       inject: 'body'
     }),
-    /*new HtmlwebpackPlugin({
-      title: 'Hello Mobile app',
-      template: path.resolve(TEM_PATH, 'mobile.html'),
-      filename: 'mobile.html'
-    }),*/
   ]
 };
